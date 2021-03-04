@@ -11,7 +11,7 @@
     document
         .querySelector(".list .new .inputWrapper input")
         .addEventListener("keydown", (e) => {
-            if (e.code === "Enter" && isInputValid()) {
+            if (e.key === "Enter" && isInputValid()) {
                 addNewTask();
             }
         });
