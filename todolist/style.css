@@ -1,0 +1,140 @@
+body {
+    background-color: #fdfdfd;
+    font-family: 'Open Sans', sans-serif;
+    color: #515050;
+}
+
+h1 {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 42px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+h2 span {
+    opacity: 0.7;
+}
+
+.list {
+    width: 300px;
+    padding: 20px 0;
+    border-top: 1px solid #bcbcbc;
+}
+
+.list .new {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.list .new .inputWrapper {
+    display: inline-flex;
+    flex: 1 1 auto;
+}
+
+.list .new .inputWrapper input {
+    flex: 1 1 100%;
+    width: 100%;
+    display: inline-flex;
+    line-height: 32px;
+    border-color: #fff;
+    box-shadow: 0px 0px 1px 1px #00000038;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin: 0;
+}
+
+button {
+    width: 32px;
+    background: #3ccc7e;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button.addNew {
+    background: #3ccc7e;
+}
+
+button.delete {
+    background: #f84877;
+}
+
+button.delete:hover {
+    background: #cc3c62;
+}
+
+button.addNew:hover {
+    background: #2e9d61;
+}
+
+.list ol {
+    padding-left: 25px;
+}
+
+.list ol li {
+    line-height: 38px;
+}
+
+.list ol li::marker {
+    font-weight: 700;
+}
+
+.list ol li div {
+    display: flex;
+    align-items: center;
+    transform: translateY(2px);
+}
+
+.list ol li div input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+}
+
+.list ol li div input[type="checkbox"]+span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: all 0.2s ease;
+}
+
+.list ol li div input[type="checkbox"]:checked+span:after {
+    width: 100%;
+}
+
+.list ol li div button svg {
+    padding: 4px;
+}
+
+.list ol li div span {
+    margin-right: auto;
+    text-transform: capitalize;
+    position: relative;
+    padding: 0 5px;
+}
